@@ -13,6 +13,19 @@
   }
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.on {
+  color: #000;
+}
+.off {
+  color: #ccc;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
