@@ -1,6 +1,7 @@
-import Navbar from './components/Navbar';
 import './App.css';
-import StarRating from './components/StarRating';
+import Navbar from './components/Navbar';
+import MovieList from './movies/MovieList';
+
 
 
 
@@ -8,8 +9,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <StarRating />
-
+      <MovieList />
 
     </div>
   );
