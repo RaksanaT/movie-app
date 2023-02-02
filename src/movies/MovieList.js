@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { movies } from '../data/movies';
 import './movies.css';
 import StarRating from '../components/StarRating';
-import ReviewList from '../components/Reviewlist';
+
 
 
 
@@ -29,7 +29,9 @@ const MovieList = () => {
       <ul className ="movie-list">
         {movies.map(movie => (
           <li key={movie.id} className="movie">
-            <img src={movie.poster} alt={movie.title} />
+            <img src={movie.poster}/>
+            <p>{movie.name}</p>
+            <p>{movie.synopsis}</p>
             <StarRating />  
           </li>
         ))}
